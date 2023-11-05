@@ -11,7 +11,7 @@
   "authors": [{
     "name": "Mrslayer01"
   }],
-  "esmodules": [ "module/exalted2ee.mjs" ],
+  "esmodules": [ "module/exalted2e.mjs" ],
   "styles": [ "css/exalted2e.css" ],
   "scripts": [],
   "packs": [],

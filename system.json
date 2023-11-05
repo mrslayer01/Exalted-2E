@@ -1,7 +1,7 @@
 {
-  "id": "exalted-2e",
+  "id": "exalted2e",
   "title": "Exalted 2E",
-  "description": "Wxalted 2e for foundry.",
+  "description": "Exalted 2e for foundry.",
   "version": "0.0.1",
   "compatibility": {
     "minimum": 11,
@@ -11,8 +11,8 @@
   "authors": [{
     "name": "Mrslayer01"
   }],
-  "esmodules": ["module/exalted-2e.mjs"],
-  "styles": ["css/exalted-2e.css"],
+  "esmodules": [ "module/exalted2ee.mjs" ],
+  "styles": [ "css/exalted2e.css" ],
   "scripts": [],
   "packs": [],
   "languages": [

@@ -28,7 +28,7 @@
   "secondaryTokenAttribute": "power",
   "url": "",
   "manifest": "https://raw.githubusercontent.com/mrslayer01/Exalted-2E/master/system.json",
-  "download": "https://github.com/mrslayer01/Exalted-2E/releases/download/0.0.2/Release0.0.1.zip",
+  "download": "https://github.com/mrslayer01/Exalted-2E/releases/download/0.0.3/Release0.0.1.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }

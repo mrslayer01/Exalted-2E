@@ -1,5 +1,5 @@
 {
-  "id": "exalted2nd",
+  "id": "exalted-2e",
   "title": "Exalted 2E",
   "description": "Wxalted 2e for foundry.",
   "version": "0.0.1",
@@ -11,8 +11,8 @@
   "authors": [{
     "name": "Asacolips"
   }],
-  "esmodules": ["module/boilerplate.mjs"],
-  "styles": ["css/boilerplate.css"],
+  "esmodules": ["module/exalted-2e.mjs"],
+  "styles": ["css/exalted-2e.css"],
   "scripts": [],
   "packs": [],
   "languages": [

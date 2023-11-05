@@ -25,22 +25,31 @@
       },
       "abilities": {
         "str": {
-          "value": 10
+          "value": 1
         },
         "dex": {
-          "value": 10
+          "value": 1
         },
-        "con": {
-          "value": 10
-        },
-        "int": {
-          "value": 10
-        },
-        "wis": {
-          "value": 10
+        "stm": {
+          "value": 1
         },
         "cha": {
-          "value": 10
+          "value": 1
+        },
+        "man": {
+          "value": 1
+        },
+        "apr": {
+          "value": 1
+        },
+        "per": {
+          "value": 1
+        },
+        "int": {
+          "value": 1
+        },
+        "wit": {
+          "value": 1
         }
       }
     },

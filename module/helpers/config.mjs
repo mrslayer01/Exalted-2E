@@ -7,17 +7,23 @@ export const EXALTED2E = {};
 EXALTED2E.abilities = {
     "str": "EXALTED2E.AbilityStr",
     "dex": "EXALTED2E.AbilityDex",
-    "con": "EXALTED2E.AbilityCon",
-    "int": "EXALTED2E.AbilityInt",
+    "stm": "EXALTED2E.AbilityStm",
+    "man": "EXALTED2E.AbilityMan",
     "wis": "EXALTED2E.AbilityWis",
-    "cha": "EXALTED2E.AbilityCha"
+    "apr": "EXALTED2E.AbilityApr",
+    "per": "EXALTED2E.AbilityPer",
+    "int": "EXALTED2E.AbilityInt",
+    "wit": "EXALTED2E.AbilityWit"
 };
 
 EXALTED2E.abilityAbbreviations = {
     "str": "EXALTED2E.AbilityStrAbbr",
     "dex": "EXALTED2E.AbilityDexAbbr",
-    "con": "EXALTED2E.AbilityConAbbr",
-    "int": "EXALTED2E.AbilityIntAbbr",
+    "stm": "EXALTED2E.AbilityStmAbbr",
+    "man": "EXALTED2E.AbilityManAbbr",
     "wis": "EXALTED2E.AbilityWisAbbr",
-    "cha": "EXALTED2E.AbilityChaAbbr"
+    "apr": "EXALTED2E.AbilityAprAbbr",
+    "per": "EXALTED2E.AbilityPerAbbr",
+    "int": "EXALTED2E.AbilityIntAbbr",
+    "wit": "EXALTED2E.AbilityWitAbbr"
 };

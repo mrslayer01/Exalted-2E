@@ -1,0 +1,34 @@
+{
+  "id": "exalted-2e",
+  "title": "Exalted 2E",
+  "description": "Wxalted 2e for foundry.",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": 11,
+    "verified": "11.314",
+    "maximum": 11
+  },
+  "authors": [{
+    "name": "Asacolips"
+  }],
+  "esmodules": ["module/boilerplate.mjs"],
+  "styles": ["css/boilerplate.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}

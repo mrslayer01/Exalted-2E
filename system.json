@@ -9,7 +9,7 @@
     "maximum": 11
   },
   "authors": [{
-    "name": "Asacolips"
+    "name": "Mrslayer01"
   }],
   "esmodules": ["module/exalted-2e.mjs"],
   "styles": ["css/exalted-2e.css"],
@@ -28,7 +28,7 @@
   "secondaryTokenAttribute": "power",
   "url": "",
   "manifest": "https://raw.githubusercontent.com/mrslayer01/Exalted-2E/master/system.json",
-  "download": "",
+  "download": "https://github.com/mrslayer01/Exalted-2E/releases/download/0.0.2/Release0.0.1.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }

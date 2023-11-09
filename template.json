@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": [ "PlayerCharacter", "NPC" ],
+    "types": [ "Character", "NPC" ],
     "templates": {
       "base": {
         "name": "",

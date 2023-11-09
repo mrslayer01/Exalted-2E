@@ -21,8 +21,8 @@
     }
   ],
   "url": "",
-  "manifest": "",
-  "download": "",
+  "manifest": "https://raw.githubusercontent.com/mrslayer01/Exalted-2E/master/system.json",
+  "download": "https://github.com/mrslayer01/Exalted-2E/releases/download/Test1/Release.zip",
   "license": "LICENSE.txt",
   "changelog": "CHANGELOG.md"
 }

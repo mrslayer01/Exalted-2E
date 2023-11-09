@@ -143,161 +143,161 @@
         "Specialty4": 0,
         "Specialty5": 0
       },
-    "expandedBackgrounds": {
-      "allies": "",
-      "mentor": "",
-      "backing": "",
-      "resources": "",
-      "contacts": "",
-      "other": {
-        "name": "",
-        "description": ""
-      },
-      "willpower": {
-        "baseLevel": 0,
-        "currentLevel": 0
-      },
-      "extraAnima": {
-        "anima1": "",
-        "anima2": "",
-        "anima3": ""
-      },
-      "limitBreak": 0,
-      "virtueFlaws": {
-        "flaw1": "",
-        "flaw2": "",
-        "flaw3": ""
-      },
-      "health": {
-        "defenceValues": {
-          "evade": 0,
-          "parry": 0,
-          "mental": 0
+      "expandedBackgrounds": {
+        "allies": "",
+        "mentor": "",
+        "backing": "",
+        "resources": "",
+        "contacts": "",
+        "other": {
+          "name": "",
+          "description": ""
         },
-        "soak": {
-          "bludgeoning": 0,
-          "lethal": 0,
-          "aggravated": 0
+        "willpower": {
+          "baseLevel": 0,
+          "currentLevel": 0
         },
-        "levels": {
-          "-0": {
-            "currentState": ""
+        "extraAnima": {
+          "anima1": "",
+          "anima2": "",
+          "anima3": ""
+        },
+        "limitBreak": 0,
+        "virtueFlaws": {
+          "flaw1": "",
+          "flaw2": "",
+          "flaw3": ""
+        },
+        "health": {
+          "defenceValues": {
+            "evade": 0,
+            "parry": 0,
+            "mental": 0
           },
-          "-1": {
-            "currentState": ""
+          "soak": {
+            "bludgeoning": 0,
+            "lethal": 0,
+            "aggravated": 0
           },
-          "-2": {
-            "currentState": ""
-          },
-          "-4": {
-            "currentState": ""
-          },
-          "incap": {
-            "currentState": ""
+          "levels": {
+            "-0": {
+              "currentState": ""
+            },
+            "-1": {
+              "currentState": ""
+            },
+            "-2": {
+              "currentState": ""
+            },
+            "-4": {
+              "currentState": ""
+            },
+            "incap": {
+              "currentState": ""
+            }
           }
+        },
+        "virtues": {
+          "compassion": {
+            "baseLevel": 0,
+            "currentLevel": 0
+          },
+          "temperance": {
+            "baseLevel": 0,
+            "currentLevel": 0
+          },
+          "conviction": {
+            "baseLevel": 0,
+            "currentLevel": 0
+          },
+          "valor": {
+            "baseLevel": 0,
+            "currentLevel": 0
+          }
+        },
+        "essance": {
+          "baseLevel": 0,
+          "essencePool": {
+            "current": 0,
+            "maximum": 0,
+            "commited": 0
+          },
+          "animaPool": {
+            "current": 0,
+            "maximum": 0,
+            "commited": 0
+          }
+        },
+        "unspeantExperience": 0,
+        "pcDescription": {
+          "age": 0,
+          "dateOfBirth": "",
+          "hair": "",
+          "eyes": "",
+          "skin": "",
+          "homeland": "",
+          "height": "",
+          "weight": "",
+          "sex": ""
         }
-      },
-      "virtues": {
-        "compassion": {
-          "baseLevel": 0,
-          "currentLevel": 0
-        },
-        "temperance": {
-          "baseLevel": 0,
-          "currentLevel": 0
-        },
-        "conviction": {
-          "baseLevel": 0,
-          "currentLevel": 0
-        },
-        "valor": {
-          "baseLevel": 0,
-          "currentLevel": 0
-        }
-      },
-      "essance": {
-        "baseLevel": 0,
-        "essencePool": {
-          "current": 0,
-          "maximum": 0,
-          "commited": 0
-        },
-        "animaPool": {
-          "current": 0,
-          "maximum": 0,
-          "commited": 0
-        }
-      },
-      "unspeantExperience": 0,
-      "pcDescription": {
-        "age": 0,
-        "dateOfBirth": "",
-        "hair": "",
-        "eyes": "",
-        "skin": "",
-        "homeland": "",
-        "height": "",
-        "weight": "",
-        "sex": ""
       }
     }
   },
-    "Item": {
-      "types": [ "Item", "MeleeWeapon", "RangedWeapon", "Armor", "Background", "Charm", "MeritOrFlaw", "Combo" ],
-      "templates": {
-        "base": {
-          "cost": 0,
-          "description": ""
-        }
-      },
-      "Item": {
-        "templates": [ "base" ]
-      },
-      "MeleeWeapon": {
-        "templates": [ "base" ],
-        "speed": 10,
-        "accuracy": 0,
-        "damage": "+0L/2",
-        "defence": 0,
-        "rate": 0,
-        "minimums": "Str 1",
-        "tags": "-"
-      },
-      "RangedWeapon": {
-        "templates": [ "base" ],
-        "speed": 0,
-        "accuracy": 0,
-        "damage": "+0L/2",
-        "rate": 0,
-        "range": 0,
-        "minimums": "Str 1",
-        "maxStength": 1,
-        "tags": "-"
-      },
-      "Armor": {
-        "templates": [ "base" ],
-        "soak": "+0L/0B",
-        "mobility": 0,
-        "fatigue": 0,
-        "tags": "-"
-      },
-      "Charms": {
-        "templates": [ "base" ],
-        "type": "",
-        "duration": "",
-        "cost": "",
-        "effect": "",
-        "keyword": "",
-        "preReqCharms": "None"
-      },
-      "MeritOrFlaw": {
-        "templates": [ "base" ],
-        "meritOrFlaw": "Merit"
-      },
-      "Combo": {
-        "templates": [ "base" ],
-        "totalBaseCost": 0
+  "Item": {
+    "types": [ "Item", "MeleeWeapon", "RangedWeapon", "Armor", "Background", "Charm", "MeritOrFlaw", "Combo" ],
+    "templates": {
+      "base": {
+        "cost": 0,
+        "description": ""
       }
+    },
+    "Item": {
+      "templates": [ "base" ]
+    },
+    "MeleeWeapon": {
+      "templates": [ "base" ],
+      "speed": 10,
+      "accuracy": 0,
+      "damage": "+0L/2",
+      "defence": 0,
+      "rate": 0,
+      "minimums": "Str 1",
+      "tags": "-"
+    },
+    "RangedWeapon": {
+      "templates": [ "base" ],
+      "speed": 0,
+      "accuracy": 0,
+      "damage": "+0L/2",
+      "rate": 0,
+      "range": 0,
+      "minimums": "Str 1",
+      "maxStength": 1,
+      "tags": "-"
+    },
+    "Armor": {
+      "templates": [ "base" ],
+      "soak": "+0L/0B",
+      "mobility": 0,
+      "fatigue": 0,
+      "tags": "-"
+    },
+    "Charms": {
+      "templates": [ "base" ],
+      "type": "",
+      "duration": "",
+      "cost": "",
+      "effect": "",
+      "keyword": "",
+      "preReqCharms": "None"
+    },
+    "MeritOrFlaw": {
+      "templates": [ "base" ],
+      "meritOrFlaw": "Merit"
+    },
+    "Combo": {
+      "templates": [ "base" ],
+      "totalBaseCost": 0
     }
   }
 }

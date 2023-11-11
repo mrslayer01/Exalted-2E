@@ -2,12 +2,33 @@
     <header class="sheet-header">
         <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100" />
         <div class="header-fields">
-            <div class="grid-2col">
+            <div class="grid-3col">
                 <div class="grid-row-start-1">
                     <label class="resource-label">Npc Name</label>
                     <input type="text" name="name" value="{{actor.name}}" />
                 </div>
-            </div>
+                <div class="grid-row-start-2">
+                    <label class="resource-label">Parry DVs</label>
+                        <div class="grid-2col">
+                            <input type="text" name="system.defenseValues.parry.currentValue" value="{{system.defenseValues.parry.currentValue}}" />
+                            <input class="grid-start-2" type="text" name="system.defenseValues.parry.maxValue" value="{{system.defenseValues.parry.maxValue}}" />
+                        </div>
+                    </div>
+                <div class="grid-row-start-2 grid-start-2">
+                    <label class="resource-label">Dodge DVs</label>
+                    <div class="grid-2col">
+                        <input type="text" name="system.defenseValues.dodge.currentValue" value="{{system.defenseValues.dodge.currentValue}}" />
+                        <input class="grid-start-2" type="text" name="system.defenseValues.dodge.maxValue" value="{{system.defenseValues.dodge.maxValue}}" />
+                    </div>
+                </div>
+                <div class="grid-row-start-2 grid-start-3">
+                    <label class="resource-label">Mental DVs</label>
+                    <div class="grid-2col">
+                        <input type="text" name="system.defenseValues.mental.currentValue" value="{{system.defenseValues.mental.currentValue}}" />
+                        <input class="grid-start-2" type="text" name="system.defenseValues.mental.maxValue" value="{{system.defenseValues.mental.maxValue}}" />
+                    </div>
+                </div>
+                </div>
         </div>
     </header>
 

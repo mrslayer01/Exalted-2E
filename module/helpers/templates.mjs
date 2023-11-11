@@ -7,9 +7,12 @@
   return loadTemplates([
 
     // Actor partials.
-    "systems/e2e/templates/actor/parts/actor-features.html",
-    "systems/e2e/templates/actor/parts/actor-items.html",
-    "systems/e2e/templates/actor/parts/actor-spells.html",
-    "systems/e2e/templates/actor/parts/actor-effects.html",
+      "systems/e2e/templates/actor/parts/actor-features.html",
+      "systems/e2e/templates/actor/parts/actor-items.html",
+      "systems/e2e/templates/actor/parts/actor-spells.html",
+      "systems/e2e/templates/actor/parts/actor-effects.html",
+      "systems/e2e/templates/actor/parts/actor-abilities.hbs",
+      "systems/e2e/templates/actor/parts/actor-attributes.hbs"
+
   ]);
 };

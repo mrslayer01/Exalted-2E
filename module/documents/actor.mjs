@@ -35,24 +35,7 @@ export class E2EActor extends Actor {
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
     // things organized.
-    this._prepareCharacterData(actorData);
     this._prepareNpcData(actorData);
-  }
-
-  /**
-   * Prepare Character type specific data
-   */
-  _prepareCharacterData(actorData) {
-    if (actorData.type !== 'character') return;
-
-    // Make modifications to data here. For example:
-    const systemData = actorData.system;
-
-    // Loop through ability scores, and add their modifiers to our sheet output.
-    for (let [key, ability] of Object.entries(systemData.abilities)) {
-      // Calculate the modifier using d20 rules.
-      ability.mod = Math.floor((ability.value - 10) / 2);
-    }
   }
 
   /**
@@ -83,7 +66,7 @@ export class E2EActor extends Actor {
    * Prepare character roll data.
    */
   _getCharacterRollData(data) {
-    if (this.type !== 'character') return;
+      if (this.type !== 'PlayerCharacter') return;
 
     // Copy the ability scores to the top level, so that rolls can use
     // formulas like `@str.mod + 4`.
@@ -91,11 +74,6 @@ export class E2EActor extends Actor {
       for (let [k, v] of Object.entries(data.abilities)) {
         data[k] = foundry.utils.deepClone(v);
       }
-    }
-
-    // Add level for easier access, or fall back to 0.
-    if (data.attributes.level) {
-      data.lvl = data.attributes.level.value ?? 0;
     }
   }
 

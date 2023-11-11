@@ -1,18 +1,22 @@
 {
   "id": "e2e",
-  "title": "Exalted 2nd Edition",
-  "description": "Exalted 2nd for foundry.",
-  "version": "0.0.3",
+  "title": "Exalted 2E",
+  "description": "Exalted 2nd edition",
+  "version": "0.0.1",
   "compatibility": {
     "minimum": 11,
     "verified": "11.315",
     "maximum": 11
   },
-  "authors": [{
-    "name": "Mrslayer01"
-  }],
-  "esmodules": ["e2e.mjs"],
-  "styles": ["css/e2e.css"],
+  "authors": [
+    {
+      "name": "mrslayer01"
+    }
+  ],
+  "esmodules": [ "e2e.mjs" ],
+  "styles": [ "css/e2e.css" ],
+  "scripts": [],
+  "packs": [],
   "languages": [
     {
       "lang": "en",

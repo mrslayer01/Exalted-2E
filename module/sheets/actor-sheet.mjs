@@ -7,15 +7,15 @@ import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/ef
 export class E2EActorSheet extends ActorSheet {
 
   /** @override */
-  static get defaultOptions() {
-    return mergeObject(super.defaultOptions, {
-        classes: ["e2e", "sheet", "actor"],
-      template: "systems/e2e/templates/actor/actor-sheet.html",
-      width: 600,
-      height: 600,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
-    });
-  }
+    static get defaultOptions() {
+        return mergeObject(super.defaultOptions, {
+            classes: ["e2e", "sheet", "actor"],
+            template: "systems/e2e/templates/actor/actor-sheet.html",
+            width: 800,
+            height: 1150,
+            tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "attributes" }]
+        });
+    }
 
   /** @override */
   get template() {
@@ -40,9 +40,8 @@ export class E2EActorSheet extends ActorSheet {
     context.flags = actorData.flags;
 
     // Prepare character data and items.
-    if (actorData.type == 'character') {
+      if (actorData.type == 'PlayerCharacter') {
       this._prepareItems(context);
-      this._prepareCharacterData(context);
     }
 
     // Prepare NPC data and items.
@@ -54,23 +53,9 @@ export class E2EActorSheet extends ActorSheet {
     context.rollData = context.actor.getRollData();
 
     // Prepare active effects
-    context.effects = prepareActiveEffectCategories(this.actor.effects);
+      context.effects = prepareActiveEffectCategories(this.actor.effects);
 
     return context;
-  }
-
-  /**
-   * Organize and classify Items for Character sheets.
-   *
-   * @param {Object} actorData The actor to prepare.
-   *
-   * @return {undefined}
-   */
-  _prepareCharacterData(context) {
-    // Handle ability scores.
-    for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.E2E.abilities[k]) ?? k;
-    }
   }
 
   /**
@@ -84,18 +69,6 @@ export class E2EActorSheet extends ActorSheet {
     // Initialize containers.
     const gear = [];
     const features = [];
-    const spells = {
-      0: [],
-      1: [],
-      2: [],
-      3: [],
-      4: [],
-      5: [],
-      6: [],
-      7: [],
-      8: [],
-      9: []
-    };
 
     // Iterate through items, allocating to containers
     for (let i of context.items) {
@@ -108,18 +81,11 @@ export class E2EActorSheet extends ActorSheet {
       else if (i.type === 'feature') {
         features.push(i);
       }
-      // Append to spells.
-      else if (i.type === 'spell') {
-        if (i.system.spellLevel != undefined) {
-          spells[i.system.spellLevel].push(i);
-        }
-      }
     }
 
     // Assign and return
     context.gear = gear;
     context.features = features;
-    context.spells = spells;
   }
 
   /* -------------------------------------------- */
@@ -216,7 +182,7 @@ export class E2EActorSheet extends ActorSheet {
     // Handle rolls that supply the formula directly.
     if (dataset.roll) {
       let label = dataset.label ? `[ability] ${dataset.label}` : '';
-      let roll = new Roll(dataset.roll+"d10", this.actor.getRollData()); //Changed to take the amount of d10s to roll.
+      let roll = new Roll(dataset.roll, this.actor.getRollData());
       roll.toMessage({
         speaker: ChatMessage.getSpeaker({ actor: this.actor }),
         flavor: label,

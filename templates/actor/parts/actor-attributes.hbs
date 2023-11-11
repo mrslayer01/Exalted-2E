@@ -1,0 +1,46 @@
+<section>
+    <div class="grid-3col">
+        <div class="grid-row-start-1">
+            <label class="resource-label">Strength</label>
+            <input type="text" name="system.attributes.strength" value="{{system.attributes.strength}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-2">
+            <label class="resource-label">Dexterity</label>
+            <input type="text" name="system.attributes.dexterity" value="{{system.attributes.dexterity}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-3">
+            <label class="resource-label">Stamina</label>
+            <input type="text" name="system.attributes.stamina" value="{{system.attributes.stamina}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-1 grid-start-2">
+            <label class="resource-label">Charisma</label>
+            <input type="text" name="system.attributes.charisma" value="{{system.attributes.charisma}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-2 grid-start-2">
+            <label class="resource-label">Manipulation</label>
+            <input type="text" name="system.attributes.manipulation" value="{{system.attributes.manipulation}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-3 grid-start-2">
+            <label class="resource-label">Appearance</label>
+            <input type="text" name="system.attributes.appearance" value="{{system.attributes.appearance}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-1 grid-start-3">
+            <label class="resource-label">Perception</label>
+            <input type="text" name="system.attributes.perception" value="{{system.attributes.perception}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-2 grid-start-3">
+            <label class="resource-label">Intelligence</label>
+            <input type="text" name="system.attributes.intelligence" value="{{system.attributes.intelligence}}" data-dtype="Number"/>
+        </div>
+        <div class="grid-row-start-3 grid-start-3">
+            <label class="resource-label">Wits</label>
+            <input type="text" name="system.attributes.wits" value="{{system.attributes.wits}}" data-dtype="Number"/>
+        </div>
+    </div>
+
+    <div class="newheader">
+        <h2 class="item active">Abilities</h2>
+    </div>
+
+    {{> "systems/e2e/templates/actor/parts/actor-abilities.hbs"}}
+</section>

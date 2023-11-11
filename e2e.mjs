@@ -22,9 +22,17 @@ Hooks.once('init', async function() {
     rollItemMacro
   };
 
-    // Add custom constants for configuration.
-    CONFIG.E2E = E2E;
+  // Add custom constants for configuration.
+  CONFIG.E2E = E2E;
 
+  /**
+   * Set an initiative formula for the system
+   * @type {String}
+   */
+  CONFIG.Combat.initiative = {
+    formula: "1d20 + @abilities.dex.mod",
+    decimals: 2
+  };
 
   // Define custom Document classes
   CONFIG.Actor.documentClass = E2EActor;
@@ -34,7 +42,7 @@ Hooks.once('init', async function() {
   Actors.unregisterSheet("core", ActorSheet);
   Actors.registerSheet("e2e", E2EActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("e2e", E2EItemSheet, { makeDefault: true });
+  Items.registerSheet("e2e", E2EItemSheet, { makeDefault: true });
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
@@ -89,7 +97,7 @@ async function createItemMacro(data, slot) {
   const item = await Item.fromDropData(data);
 
   // Create the macro command using the uuid.
-    const command = `game.e2e.rollItemMacro("${data.uuid}");`;
+  const command = `game.e2e.rollItemMacro("${data.uuid}");`;
   let macro = game.macros.find(m => (m.name === item.name) && (m.command === command));
   if (!macro) {
     macro = await Macro.create({

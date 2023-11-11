@@ -1,23 +1,26 @@
 {
   "Actor": {
-    "types": [ "Character", "NPC" ],
+    "types": [ "PlayerCharacter", "NPC" ],
     "templates": {
       "base": {
         "name": "",
         "description": ""
-      }
+      },
+      "customrolls": {},
+      "groups": {}
     },
     "PlayerCharacter": {
       "templates": [ "base" ],
-      "pcName": "",
-      "pcConcept": "",
-      "pcPlayer": "",
-      "pcMotivation": "",
-      "pcCaste": "Dawn",
-      "pcAnima": "",
+      "name": "",
+      "concept": "",
+      "player": "",
+      "motivation": "",
+      "caste": "Dawn",
+      "anima": "",
+      "biography": "",
       "attributes": {
         "strength": 1,
-        "dextarity": 1,
+        "dexterity": 1,
         "stamina": 1,
         "charisma": 1,
         "manipulation": 1,
@@ -228,30 +231,19 @@
             "commited": 0
           }
         },
-        "unspeantExperience": 0,
-        "pcDescription": {
-          "age": 0,
-          "dateOfBirth": "",
-          "hair": "",
-          "eyes": "",
-          "skin": "",
-          "homeland": "",
-          "height": "",
-          "weight": "",
-          "sex": ""
-        }
+        "unspeantExperience": 0
       }
     }
   },
   "Item": {
-    "types": [ "Item", "MeleeWeapon", "RangedWeapon", "Armor", "Background", "Charm", "MeritOrFlaw", "Combo" ],
+    "types": [ "item", "MeleeWeapon", "RangedWeapon", "Armor", "Background", "Charm", "MeritOrFlaw", "Combo" ],
     "templates": {
       "base": {
         "cost": 0,
         "description": ""
       }
     },
-    "Item": {
+    "item": {
       "templates": [ "base" ]
     },
     "MeleeWeapon": {

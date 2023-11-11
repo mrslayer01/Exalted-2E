@@ -7,7 +7,7 @@ export class E2EItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-        classes: ["e2e", "sheet", "item"],
+      classes: ["e2e", "sheet", "item"],
       width: 520,
       height: 480,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
@@ -16,7 +16,7 @@ export class E2EItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-      const path = "systems/e2e/templates/item";
+    const path = "systems/e2e/templates/item";
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 

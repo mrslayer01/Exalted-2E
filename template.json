@@ -165,12 +165,6 @@
           "anima2": "",
           "anima3": ""
         },
-        "limitBreak": 0,
-        "virtueFlaws": {
-          "flaw1": "",
-          "flaw2": "",
-          "flaw3": ""
-        },
         "health": {
           "defenceValues": {
             "evade": 0,
@@ -201,31 +195,37 @@
           }
         },
         "virtues": {
+          "limitBreak": 0,
           "compassion": {
             "baseLevel": 0,
-            "currentLevel": 0
+            "currentLevel": 0,
+            "virtueFlaws": {}
           },
           "temperance": {
             "baseLevel": 0,
-            "currentLevel": 0
+            "currentLevel": 0,
+            "virtueFlaws": {}
           },
           "conviction": {
             "baseLevel": 0,
-            "currentLevel": 0
+            "currentLevel": 0,
+            "virtueFlaws": {}
           },
           "valor": {
             "baseLevel": 0,
-            "currentLevel": 0
+            "currentLevel": 0,
+            "virtueFlaws": {}
           }
         },
-        "essance": {
+        "essence": {
           "baseLevel": 0,
-          "essencePool": {
+          "extraEssence": 0,
+          "personalPool": {
             "current": 0,
             "maximum": 0,
             "commited": 0
           },
-          "animaPool": {
+          "peripheralPool": {
             "current": 0,
             "maximum": 0,
             "commited": 0
@@ -233,10 +233,149 @@
         },
         "unspeantExperience": 0
       }
+    },
+    "NPC": {
+      "templates": [ "base" ],
+      "defenseValues": {
+        "parry": {
+          "currentValue": 0,
+          "maxValue": 0
+        },
+        "dodge": {
+          "currentValue": 0,
+          "maxValue": 0
+        },
+        "mental": {
+          "currentValue": 0,
+          "maxValue": 0
+        }
+      },
+      "modifiers": 0,
+      "attributes": {
+        "strength": 1,
+        "dexterity": 1,
+        "stamina": 1,
+        "charisma": 1,
+        "manipulation": 1,
+        "appearance": 1,
+        "perception": 1,
+        "intelligence": 1,
+        "wits": 1
+      },
+      "abilitiesDawn": {
+        "Archery": {
+          "level": 0,
+          "favored": false
+        },
+        "MartialArts": {
+          "level": 0,
+          "favored": false
+        },
+        "Melee": {
+          "level": 0,
+          "favored": false
+        },
+        "Thrown": {
+          "level": 0,
+          "favored": false
+        },
+        "War": {
+          "level": 0,
+          "favored": false
+        }
+      },
+      "abilitiesZenith": {
+        "Resistance": {
+          "level": 0,
+          "favored": false
+        },
+        "Integrity": {
+          "level": 0,
+          "favored": false
+        },
+        "Performance": {
+          "level": 0,
+          "favored": false
+        },
+        "Presence": {
+          "level": 0,
+          "favored": false
+        },
+        "Survival": {
+          "level": 0,
+          "favored": false
+        }
+      },
+      "abilitiesTwilight": {
+        "Craft": {
+          "level": 0,
+          "favored": false
+        },
+        "Investigation": {
+          "level": 0,
+          "favored": false
+        },
+        "Lore": {
+          "level": 0,
+          "favored": false
+        },
+        "Medicine": {
+          "level": 0,
+          "favored": false
+        },
+        "Occult": {
+          "level": 0,
+          "favored": false
+        }
+      },
+      "abilitiesNight": {
+        "Athletics": {
+          "level": 0,
+          "favored": false
+        },
+        "Awareness": {
+          "level": 0,
+          "favored": false
+        },
+        "Dodge": {
+          "level": 0,
+          "favored": false
+        },
+        "Larceny": {
+          "level": 0,
+          "favored": false
+        },
+        "Stealth": {
+          "level": 0,
+          "favored": false
+        }
+      },
+      "abilitiesEclipse": {
+        "Bureaucracy": {
+          "level": 0,
+          "favored": false
+        },
+        "Linguistics": {
+          "level": 0,
+          "favored": false
+        },
+        "Ride": {
+          "level": 0,
+          "favored": false
+        },
+        "Sail": {
+          "level": 0,
+          "favored": false
+        },
+        "Socialize": {
+          "level": 0,
+          "favored": false
+        }
+      }
     }
   },
   "Item": {
-    "types": [ "item", "MeleeWeapon", "RangedWeapon", "Armor", "Background", "Charm", "MeritOrFlaw", "Combo" ],
+    "types": [ "item", "MeleeWeapon", "RangedWeapon", "Armor", "Background", "Charm", "MeritOrFlaw", "Combo", "VirtueFlaw" ],
     "templates": {
       "base": {
         "cost": 0,
@@ -290,6 +429,19 @@
     "Combo": {
       "templates": [ "base" ],
       "totalBaseCost": 0
+    },
+    "VirtueFlaw": {
+      "templates": [ "base" ],
+      "virtueAssociated": "Compassion",
+      "partialControl": "",
+      "duration": "",
+      "limitbreakCondition": ""
+    },
+    "Background": {
+      "templates": [ "base" ],
+      "backgroundType": "Allies",
+      "backgroundDots": 0,
+      "canBeTakenMultipleTimes": false
     }
   }
 }

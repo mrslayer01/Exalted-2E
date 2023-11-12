@@ -244,8 +244,14 @@
         "dodge": {
           "currentValue": 0,
           "maxValue": 0
+        }
+      },
+      "mentalDefenseValues": {
+        "parry": {
+          "currentValue": 0,
+          "maxValue": 0
         },
-        "mental": {
+        "dodge": {
           "currentValue": 0,
           "maxValue": 0
         }

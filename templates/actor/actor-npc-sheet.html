@@ -8,27 +8,34 @@
                     <input type="text" name="name" value="{{actor.name}}" />
                 </div>
                 <div class="grid-row-start-2">
-                    <label class="resource-label">Parry DVs</label>
-                        <div class="grid-2col">
-                            <input type="text" name="system.defenseValues.parry.currentValue" value="{{system.defenseValues.parry.currentValue}}" />
-                            <input class="grid-start-2" type="text" name="system.defenseValues.parry.maxValue" value="{{system.defenseValues.parry.maxValue}}" />
-                        </div>
+                    <label class="resource-label">Physical Parry DVs</label>
+                    <div class="grid-2col">
+                        <input type="text" name="system.defenseValues.parry.currentValue" value="{{system.defenseValues.parry.currentValue}}" />
+                        <input class="grid-start-2" type="text" name="system.defenseValues.parry.maxValue" value="{{system.defenseValues.parry.maxValue}}" />
                     </div>
+                </div>
                 <div class="grid-row-start-2 grid-start-2">
-                    <label class="resource-label">Dodge DVs</label>
+                    <label class="resource-label">Physical Dodge DVs</label>
                     <div class="grid-2col">
                         <input type="text" name="system.defenseValues.dodge.currentValue" value="{{system.defenseValues.dodge.currentValue}}" />
                         <input class="grid-start-2" type="text" name="system.defenseValues.dodge.maxValue" value="{{system.defenseValues.dodge.maxValue}}" />
                     </div>
                 </div>
-                <div class="grid-row-start-2 grid-start-3">
-                    <label class="resource-label">Mental DVs</label>
+                <div class="grid-row-start-3">
+                    <label class="resource-label">Mental Parry DVs</label>
                     <div class="grid-2col">
-                        <input type="text" name="system.defenseValues.mental.currentValue" value="{{system.defenseValues.mental.currentValue}}" />
-                        <input class="grid-start-2" type="text" name="system.defenseValues.mental.maxValue" value="{{system.defenseValues.mental.maxValue}}" />
+                        <input type="text" name="system.mentalDefenseValues.parry.currentValue" value="{{system.mentalDefenseValues.parry.currentValue}}" />
+                        <input class="grid-start-2" type="text" name="system.mentalDefenseValues.parry.maxValue" value="{{system.mentalDefenseValues.parry.maxValue}}" />
                     </div>
                 </div>
+                <div class="grid-row-start-3 grid-start-2">
+                    <label class="resource-label">Mental Dodge DVs</label>
+                    <div class="grid-2col">
+                        <input type="text" name="system.mentalDefenseValues.dodge.currentValue" value="{{system.mentalDefenseValues.dodge.currentValue}}" />
+                        <input class="grid-start-2" type="text" name="system.mentalDefenseValues.dodge.maxValue" value="{{system.mentalDefenseValues.dodge.maxValue}}" />
+                    </div>
                 </div>
+            </div>
         </div>
     </header>
 
